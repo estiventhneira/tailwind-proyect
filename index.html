@@ -4,26 +4,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
-  <body>
-    <h1 class="font-mono text-3xl line-through">
-      hello world
-    </h1>
-    <p class="text-xl leading-7 text-right underline uppercase">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
-      voluptatum quibusdam quam cupiditate expedita? Voluptatum distinctio neque
-      quo excepturi nobis?
-    </p>
-    <p class="text-3xl">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus,
-      cumque!
-    </p>
-    <ul class="text-4xl">
-      <li class="italic">lorem Ipsum</li>
-      <li class="font-bold">lorem Ipsum</li>
-      <li class="font-extrabold">lorem Ipsum</li>
-      <li class="font-light">lorem Ipsum</li>
-      <li class="font-semibold">lorem Ipsum</li>
-    </ul>
+  <body class="min-h-screen bg-gray-400">
+    <header class="my-0 h-auto max-w-full bg-gray-900 text-white">
+      <div class="flex justify-between items-center">
+        <div>
+          <img class="py-2 px-2 my-1 h-12" src="./img/logo-w.svg" alt="hola" />
+        </div>
+        <div
+          class="text-3xl flex items-center mb-1 mr-4 hover:text-yellow-600 cursor-pointer shadow"
+        >
+          &equiv;
+        </div>
+      </div>
+      <div class="px-4">
+        <input
+          type="search"
+          name="Busqueda"
+          id=""
+          placeholder="Buscar..."
+          class="w-full bg-gray-300 leading-snug placeholder-gray-700 py-1 px-3 border border-gray-700 rounded-md focus:shadow-outline outline-none"
+        />
+      </div>
+      <div class="pt-1 px-6 flex font-semibold">
+        Precio:
+        <div class="ml-2 cursor-pointer">$</div>
+        <div class="ml-2 cursor-pointer text-yellow-600">$$</div>
+        <div class="ml-2 cursor-pointer">$$$</div>
+        <div class="ml-2 cursor-pointer">$$$$</div>
+      </div>
+      <div class="pb-1 flex pl-6 font-semibold">
+        Calificación:
+        <div class="ml-2">&starf;</div>
+        <div class="text-yellow-600">&starf;</div>
+        <div class="text-yellow-600">&starf;</div>
+        <div class="text-yellow-600">&starf;</div>
+        <div class="text-yellow-600">&star;</div>
+      </div>
+      <div class="pl-6 pb-2">
+        <button
+          class="bg-yellow-500 py-1 text-white px-4 border border-gray-800 rounded-md shadow-2xl hover:bg-gray-500"
+        >
+          Filtrar
+        </button>
+      </div>
+    </header>
+    <main>
+      <div
+        class="relative z-0 bg-no-repeat bg-cover bg-center h-80 md:h-400px"
+        style="
+          background-image: url(https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=80);
+          filter: brightness(0.6);
+        "
+      ></div>
+      <div
+        class="absolute z-10 text-white text-4xl font-sans font-semibold text-center"
+        style="bottom: 40%; left: 60%;"
+      >
+        Tu Comida Favorita!
+      </div>
+    </main>
+    <div class="px-8 my-4 sm:flex flex-wrap justify-center">
+      <div class="px-4 mt-4 sm:w-1/2 lg:w-1/3">
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=30"
+            alt="Hamburguesa"
+            class="rounded-lg w-full"
+          />
+        </div>
+        <div class="bg-white rounded-lg -mt-4 relative shadow-lg mx-2 p-3">
+          <h2 class="text-2xl uppercase tracking-tight font-bold text-gray-800">
+            Hamburguesa con Queso
+          </h2>
+          <p class="text-gray-700 font-medium">
+            La mejor Hamburguesa de la ciudad, ven y disfrutala justo a tus
+            amigos y familiares c:
+          </p>
+          <span class="mt-2 text-gray-700 font-semibold">2$ USD</span> <br />
+          <span class="mt-2 text-yellow-700 text-base"
+            >Calificación: &starf;&starf;&starf;&starf;&star; /36
+            Opiniones</span
+          >
+        </div>
+      </div>
+      <div class="mt-4 px-4 sm:w-1/2 lg:w-1/3">
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=30"
+            alt="Hamburguesa"
+            class="rounded-lg w-full"
+          />
+        </div>
+        <div class="bg-white rounded-lg -mt-4 relative shadow-lg mx-2 p-3">
+          <h2 class="text-2xl uppercase tracking-tight font-bold text-gray-800">
+            Hamburguesa con Queso
+          </h2>
+          <p class="text-gray-700 font-medium">
+            La mejor Hamburguesa de la ciudad, ven y disfrutala justo a tus
+            amigos y familiares c:
+          </p>
+          <span class="mt-2 text-gray-700 font-semibold">2$ USD</span> <br />
+          <span class="mt-2 text-yellow-700 text-base"
+            >Calificación: &starf;&starf;&starf;&starf;&star; /36
+            Opiniones</span
+          >
+        </div>
+      </div>
+      <div class="mt-4 px-4 sm:w-1/2 lg:w-1/3">
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=30"
+            alt="Hamburguesa"
+            class="rounded-lg w-full"
+          />
+        </div>
+        <div class="bg-white rounded-lg -mt-4 relative shadow-lg mx-2 p-3">
+          <h2 class="text-2xl uppercase tracking-tight font-bold text-gray-800">
+            Hamburguesa con Queso
+          </h2>
+          <p class="text-gray-700 font-medium">
+            La mejor Hamburguesa de la ciudad, ven y disfrutala justo a tus
+            amigos y familiares c:
+          </p>
+          <span class="mt-2 text-gray-700 font-semibold">2$ USD</span> <br />
+          <span class="mt-2 text-yellow-700 text-base"
+            >Calificación: &starf;&starf;&starf;&starf;&star; /36
+            Opiniones</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="formulario-principal container mx-auto px-10 sm:px-32 pb-3">
+      <div class="font-semibold text-gray-800">Nombre:</div>
+      <input
+        class="w-full bg-gray-100 leading-snug placeholder-gray-700 py-1 px-3 border border-gray-700 rounded-md focus:shadow-outline outline-none"
+        type="text"
+        placeholder="Nombre"
+      />
+      <div class="font-semibold text-gray-800">Email:</div>
+      <input
+        class="w-full bg-gray-100 leading-snug placeholder-gray-700 py-1 px-3 border border-gray-700 rounded-md focus:shadow-outline outline-none"
+        type="email"
+        placeholder="Email"
+      />
+      <div class="font-semibold text-gray-800">Comentarios:</div>
+      <textarea
+        class="w-full bg-gray-100 leading-snug placeholder-gray-700 py-1 px-3 border border-gray-700 rounded-md focus:shadow-outline outline-none"
+        placeholder="Escribe aquí tus aportes"
+        name="Comentarios"
+        id=""
+        cols="40"
+        rows="5"
+      ></textarea>
+      <button
+        class="block bg-gray-600 py-1 text-white px-4 border border-gray-800 rounded-md my-4 mx-auto shadow-2xl hover:bg-gray-500"
+      >
+        Enviar!
+      </button>
+    </div>
+    <footer
+      class="md:flex text-center md:text-left underline md:justify-evenly md:items-center bg-gray-900 h-auto text-white w-full max-w-full relative bottom-0"
+    >
+      <ul class="mx-4 pt-4 md:list-disc md:pb-4">
+        <li class="hover:text-yellow-600 cursor-pointer">Soporte</li>
+        <li class="hover:text-yellow-600 cursor-pointer">Contactanos</li>
+        <li class="hover:text-yellow-600 cursor-pointer">
+          Politica de Privacidad
+        </li>
+      </ul>
+      <div class="mx-4 mt-4 pb-4">
+        <div class="hover:text-yellow-600 cursor-pointer">
+          <i class="fa fa-facebook"></i>Facebook
+        </div>
+        <div class="hover:text-yellow-600 cursor-pointer">
+          <i class="fa fa-instagram"></i>@estiventhneira
+        </div>
+        <div class="hover:text-yellow-600 cursor-pointer">
+          <i class="fa fa-twitter"></i>@estiventhneira1
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
